@@ -1,0 +1,4 @@
+{
+  "name": "wrong-tape-type",
+  "tape": [1, "2", 3]
+}

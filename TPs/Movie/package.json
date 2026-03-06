@@ -1,0 +1,22 @@
+{
+  "name": "tp-movie",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch --env-file=.env server.ts",
+    "build": "tsc",
+    "start": "node --env-file=.env dist/server.js"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.41.0",
+    "pg": "^8.13.3",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "@types/pg": "^8.11.11",
+    "drizzle-kit": "^0.30.4",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}
