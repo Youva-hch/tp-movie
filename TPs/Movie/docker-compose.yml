@@ -11,5 +11,20 @@ services:
     volumes:
       - pg_data:/var/lib/postgresql/data
 
+  app:
+    build: .
+    container_name: movie-app
+    environment:
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_USER: postgres
+      DB_PASSWORD: postgres
+      DB_NAME: db
+      PORT: 3001
+    ports:
+      - "3001:3001"
+    depends_on:
+      - postgres
+
 volumes:
   pg_data:
